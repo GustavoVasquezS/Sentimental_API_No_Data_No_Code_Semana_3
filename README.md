@@ -57,14 +57,32 @@ weighted avg       0.75      0.78      0.75      5000
 
 ---
 
+## � Archivos Grandes (Descarga Requerida)
+
+Los siguientes archivos superan el límite de GitHub y deben descargarse manualmente:
+
+| Archivo | Descripción | 
+|---------|-------------|
+| `train.csv` | Dataset de entrenamiento (~200K reseñas de Amazon multilenguaje) |
+| `sentiment_bundle.joblib` | Modelo ML serializado (pipeline completo + metadata) |
+
+📎 **Descargar desde:** [Google Drive](https://drive.google.com/file/d/18Hd2lqwTytVHA7I5lbjQ6YzKWQ34ok36/view?usp=sharing)
+
+> ⚠️ **Importante:** Coloca ambos archivos en la raíz del proyecto antes de ejecutar el notebook o la API.
+
+---
+
 ## 🚀 Inicio Rápido
 
-### 1. Instalar dependencias
+### 1. Descargar archivos grandes
+Descarga `train.csv` y `sentiment_bundle.joblib` desde el [enlace de Google Drive](https://drive.google.com/file/d/18Hd2lqwTytVHA7I5lbjQ6YzKWQ34ok36/view?usp=sharing) y colócalos en la raíz del proyecto.
+
+### 2. Instalar dependencias
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Ejecutar el notebook para entrenar el modelo
+### 3. Ejecutar el notebook para entrenar el modelo
 ```bash
 jupyter notebook Proyecto_final_v8.ipynb
 # Ejecutar todas las celdas para generar sentiment_bundle.joblib
@@ -461,3 +479,4 @@ Este proyecto está bajo licencia MIT.
 <p align="center">
   <i>💡 Transformando feedback en insights accionables</i>
 </p>
+
